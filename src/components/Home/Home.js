@@ -11,7 +11,7 @@ const Home = () => {
     const [activities, setActivities] = useState([]);
 
     useEffect(() => {
-        fetch('https://fathomless-hollows-72216.herokuapp.com/activities')
+        fetch('http://localhost:5000/activities')
             .then(res => res.json())
             .then(data => setActivities(data))
     }, [])

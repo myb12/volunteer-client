@@ -34,9 +34,9 @@ function App() {
             <Login />
           </Route>
 
-          <Route path="/volunteer-registration/:activityId">
+          <PrivateRoute path="/volunteer-registration/:activityId">
             <VolunteerRegistration />
-          </Route>
+          </PrivateRoute>
 
         </Switch>
       </Router>
